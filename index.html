@@ -1,0 +1,1618 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STEMCELLS - Medicina Regenerativa & Longevidad Premium</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/ARBOL LOGO.png" />
+
+    <!-- Meta SEO -->
+    <meta name="description"
+        content="Descubra terapias avanzadas de Células Madre y Exosomas para regeneración celular, rejuvenecimiento y longevidad en asociación exclusiva con ME HEALTH y el Dr. Carlos Miramontes." />
+    <meta name="keywords"
+        content="celulas madre, exosomas, medicina regenerativa, longevidad, antiedad, carlos miramontes, me health" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Swiper CSS (Hero Carousel) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Barra de progreso de lectura (Scroll Progress Bar) -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Células Orgánicas Flotantes (Efecto Parallax Scroll de Framer) -->
+    <div class="floating-cell floating-cell-1"></div>
+    <div class="floating-cell floating-cell-2"></div>
+
+    <!-- Preloader de Pantalla -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo" id="preloader-logo">STEMCELLS</div>
+        <div class="preloader-loader">
+            <div class="preloader-bar" id="preloader-bar"></div>
+        </div>
+        <div class="preloader-percentage" id="preloader-percentage">0%</div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="logo">
+            <img src="assets/LOGO LETRAS S STEMCELLS.png" alt="STEMCELLS" />
+        </div>
+        <nav class="nav-links" id="nav-links">
+            <a href="#hero">Inicio</a>
+            <a href="#about">Nosotros</a>
+            <a href="#services">Servicios</a>
+            <a href="#carlos">Dr. Miramontes</a>
+            <a href="#products">Productos</a>
+        </nav>
+        <div class="nav-cta">
+            <a href="#contact" class="btn btn-primary">Más información</a>
+        </div>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-slide-bg">
+            <div class="hero-bg-image" style="background-image: url('assets/hero_bg.png')"></div>
+            <video class="hero-bg-video" autoplay muted playsinline loop referrerpolicy="no-referrer"
+                style="z-index: 2;">
+                <source src="https://cryovidastemcells.com/wp-content/uploads/2025/12/Fondo-cryovida-hero.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="hero-overlay" style="z-index: 3;"></div>
+        </div>
+        <div class="container" style="position: relative; z-index: 10;">
+            <div class="hero-content">
+                <img src="assets/logo_stemcellsBlanco.png" alt="STEMCELLS" class="hero-logo"
+                    style="margin-bottom: 30px; max-width: min(280px, 65vw); height: auto; display: block; opacity: 0; transform: scale(0.95);">
+                <span class="section-tag" id="hero-tag">El Futuro de la Longevidad</span>
+                <h1 class="hero-title" id="hero-title">Medicina Regenerativa de Precisión</h1>
+                <p class="hero-desc" id="hero-desc">
+                    Restauramos la vitalidad celular y optimizamos su salud mediante terapias avanzadas de
+                    Células Madre y Exosomas, diseñadas para renovar su vida desde el origen.
+                </p>
+                <div class="hero-btns" id="hero-btns">
+                    <a href="#about" class="btn btn-primary">Saber más</a>
+                    <a href="#contact" class="btn btn-secondary">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Banner (Alianzas y Rigor) -->
+    <section class="marquee-section">
+        <div class="marquee-container">
+            <div class="marquee-wrapper">
+                <div class="marquee-item">
+                    <img src="assets/M_health.png" alt="ME HEALTH GROUP">
+                    <span>ME HEALTH GROUP</span>
+                </div>
+                <div class="marquee-item">
+                    <svg class="marquee-logo" viewBox="0 0 24 24">
+                        <path
+                            d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            fill="currentColor" />
+                    </svg>
+                    <span>TERAPIA CELULAR CERTIFICADA</span>
+                </div>
+                <div class="marquee-item">
+                    <svg class="marquee-logo" viewBox="0 0 24 24">
+                        <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" fill="currentColor" />
+                    </svg>
+                    <span>RIGOR CIENTÍFICO FDA / COFEPRIS</span>
+                </div>
+                <div class="marquee-item">
+                    <svg class="marquee-logo" viewBox="0 0 24 24">
+                        <path d="M12 2L2 22h20L12 2zm0 3l7.5 15h-15L12 5z" fill="currentColor" />
+                    </svg>
+                    <span>EXCELENCIA EN LONGEVIDAD</span>
+                </div>
+                <!-- Duplicado para loop continuo -->
+                <div class="marquee-item">
+                    <img src="assets/M_health.png" alt="ME HEALTH GROUP">
+                    <span>ME HEALTH GROUP</span>
+                </div>
+                <div class="marquee-item">
+                    <svg class="marquee-logo" viewBox="0 0 24 24">
+                        <path
+                            d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            fill="currentColor" />
+                    </svg>
+                    <span>TERAPIA CELULAR CERTIFICADA</span>
+                </div>
+                <div class="marquee-item">
+                    <svg class="marquee-logo" viewBox="0 0 24 24">
+                        <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" fill="currentColor" />
+                    </svg>
+                    <span>RIGOR CIENTÍFICO FDA / COFEPRIS</span>
+                </div>
+                <div class="marquee-item">
+                    <svg class="marquee-logo" viewBox="0 0 24 24">
+                        <path d="M12 2L2 22h20L12 2zm0 3l7.5 15h-15L12 5z" fill="currentColor" />
+                    </svg>
+                    <span>EXCELENCIA EN LONGEVIDAD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (ME HEALTH) -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-tag">La Ciencia de la Renovación</span>
+                    <h2>Innovación Científica y Ética para su Salud</h2>
+                    <p>
+                        En **Stemcells**, desarrollamos protocolos personalizados basados
+                        en los descubrimientos más recientes de la biotecnología médica. A
+                        través de la terapia celular regenerativa, estimulamos las
+                        capacidades innatas del cuerpo para repararse a nivel molecular y
+                        orgánico.
+                    </p>
+                    <p>
+                        Nuestros tratamientos se realizan bajo estrictos estándares
+                        internacionales de bioseguridad, proporcionando un abordaje
+                        clínico seguro, efectivo y de vanguardia para pacientes que buscan
+                        una longevidad activa y saludable.
+                    </p>
+
+                    <div class="provider-badge">
+                        <span>Socio Estratégico Oficial</span>
+                        <strong>ME HEALTH</strong>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="10">6</h3>
+                        <p>Años de Experiencia Clínica</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="100">100</h3>
+                        <p>% de Rigor y Seguridad Biológica</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Nuestra Filosofía (Texto Revelado al Scroll) -->
+    <section class="philosophy-section">
+        <div class="container-sm">
+            <div class="philosophy-tag">
+                <svg class="philosophy-tag-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="
+              fill: none;
+              stroke: var(--primary);
+              width: 20px;
+              height: 20px;
+              vertical-align: middle;
+              margin-right: 8px;
+            ">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5" />
+                    <path d="M12 8v8M8 12h8" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <span>Nuestra Filosofía</span>
+            </div>
+
+            <p class="philosophy-text-reveal" id="philosophy-text">
+                En Stemcells, no aceleramos los procesos naturales del cuerpo —
+                estimulamos su propia capacidad de autorrepararse. A través de ciencia
+                de vanguardia, rigor ético y tratamientos personalizados, abrimos las
+                puertas a una longevidad activa, saludable y verdaderamente duradera.
+            </p>
+
+            <div class="philosophy-cta-wrapper">
+                <a href="#contact" class="btn btn-outline">Conocer la Ciencia Detrás</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Staggered Card Grid - Framer Stagger Style) -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header-premium">
+                <h2 class="services-premium-title">
+                    No existe un interruptor único para la salud,<br /><span class="highlight-text">pero sí pasos
+                        científicos firmes hacia adelante.</span>
+                </h2>
+                <p class="services-premium-desc">
+                    Cada organismo es único. Estas son las terapias celulares avanzadas
+                    diseñadas para restaurar su vitalidad de forma segura y duradera.
+                </p>
+            </div>
+
+            <div class="services-staggered-grid">
+                <!-- Card 1 -->
+                <div class="service-card-container">
+                    <div class="service-stagger-card card-stagger-1" data-category="ciencia">
+                        <!-- Front Face -->
+                        <div class="card-face card-front" style="
+                      background-image:
+                        linear-gradient(
+                          to bottom,
+                          rgba(18, 21, 20, 0.1) 0%,
+                          rgba(18, 21, 20, 0.85) 100%
+                        ),
+                        url(&quot;assets/service_cell_therapy.png&quot;);
+                    ">
+                            <div class="card-content-wrapper">
+                                <h3>Células Madre</h3>
+                                <p>
+                                    Protocolos biológicos de alta pureza diseñados para regenerar
+                                    tejidos, desinflamar el organismo y combatir enfermedades
+                                    sistémicas.
+                                </p>
+                                <div class="card-action-trigger">Ver Detalles <span class="arrow">➔</span></div>
+                            </div>
+                        </div>
+                        <!-- Back Face -->
+                        <div class="card-face card-back">
+                            <div class="card-back-content">
+                                <button class="close-card-btn" aria-label="Cerrar">&times;</button>
+                                <span class="card-back-tag">Terapia Avanzada</span>
+                                <h3>Células Madre</h3>
+                                <span class="service-subtitle">Medicina Regenerativa de Precisión</span>
+                                <div class="details-divider"></div>
+                                <ul class="details-benefits">
+                                    <li><span class="gold-check">✓</span> Regeneración profunda de tejidos</li>
+                                    <li><span class="gold-check">✓</span> Modulación inmunológica y desinflamación</li>
+                                    <li><span class="gold-check">✓</span> Renovación biológica orgánica y sistémica</li>
+                                </ul>
+                                <div class="details-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Aplicación</span>
+                                        <span class="meta-value">IV / Infiltración</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Pureza</span>
+                                        <span class="meta-value">&gt;95% Viabilidad</span>
+                                    </div>
+                                </div>
+                                <a href="#contact" class="btn btn-primary compact-btn card-cta-btn"
+                                    data-service="celulas">Agendar Valoración</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card-container">
+                    <div class="service-stagger-card card-stagger-2" data-category="ciencia">
+                        <!-- Front Face -->
+                        <div class="card-face card-front" style="
+                      background-image:
+                        linear-gradient(
+                          to bottom,
+                          rgba(18, 21, 20, 0.1) 0%,
+                          rgba(18, 21, 20, 0.85) 100%
+                        ),
+                        url(&quot;assets/service_exosome_therapy.png&quot;);
+                    ">
+                            <div class="card-content-wrapper">
+                                <h3>Terapia de Exosomas</h3>
+                                <p>
+                                    Mensajeros acelulares cargados de ARN y factores de crecimiento
+                                    que aceleran exponencialmente la comunicación y reparación
+                                    celular.
+                                </p>
+                                <div class="card-action-trigger">Ver Detalles <span class="arrow">➔</span></div>
+                            </div>
+                        </div>
+                        <!-- Back Face -->
+                        <div class="card-face card-back">
+                            <div class="card-back-content">
+                                <button class="close-card-btn" aria-label="Cerrar">&times;</button>
+                                <span class="card-back-tag">Mensajeros Acelulares</span>
+                                <h3>Terapia de Exosomas</h3>
+                                <span class="service-subtitle">Biotecnología Celular Acelerada</span>
+                                <div class="details-divider"></div>
+                                <ul class="details-benefits">
+                                    <li><span class="gold-check">✓</span> Estimulación de colágeno y elastina</li>
+                                    <li><span class="gold-check">✓</span> ARN celular y factores de crecimiento</li>
+                                    <li><span class="gold-check">✓</span> Renovación tisular y dérmica veloz</li>
+                                </ul>
+                                <div class="details-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Aplicación</span>
+                                        <span class="meta-value">Tópica / Inyectada</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Concentración</span>
+                                        <span class="meta-value">Alta Densidad</span>
+                                    </div>
+                                </div>
+                                <a href="#contact" class="btn btn-primary compact-btn card-cta-btn"
+                                    data-service="exosomas">Agendar Valoración</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card-container">
+                    <div class="service-stagger-card card-stagger-3" data-category="longevidad">
+                        <!-- Front Face -->
+                        <div class="card-face card-front" style="
+                      background-image:
+                        linear-gradient(
+                          to bottom,
+                          rgba(18, 21, 20, 0.1) 0%,
+                          rgba(18, 21, 20, 0.85) 100%
+                        ),
+                        url(&quot;assets/service_cosmetic_cellular.png&quot;);
+                    ">
+                            <div class="card-content-wrapper">
+                                <h3>Cosmética Celular</h3>
+                                <p>
+                                    Elixires clínicos premium formulados con factores de crecimiento
+                                    para revertir el envejecimiento cutáneo a nivel molecular
+                                    profundo.
+                                </p>
+                                <div class="card-action-trigger">Ver Detalles <span class="arrow">➔</span></div>
+                            </div>
+                        </div>
+                        <!-- Back Face -->
+                        <div class="card-face card-back">
+                            <div class="card-back-content">
+                                <button class="close-card-btn" aria-label="Cerrar">&times;</button>
+                                <span class="card-back-tag">Alta Cosmecéutica</span>
+                                <h3>Cosmética Celular</h3>
+                                <span class="service-subtitle">Rejuvenecimiento Dérmico Profundo</span>
+                                <div class="details-divider"></div>
+                                <ul class="details-benefits">
+                                    <li><span class="gold-check">✓</span> Reversión del envejecimiento molecular</li>
+                                    <li><span class="gold-check">✓</span> Reactivación profunda de fibroblastos</li>
+                                    <li><span class="gold-check">✓</span> Restauración de la barrera lipídica</li>
+                                </ul>
+                                <div class="details-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Uso</span>
+                                        <span class="meta-value">Tratamiento Diario</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Formulación</span>
+                                        <span class="meta-value">Factores de Crecimiento</span>
+                                    </div>
+                                </div>
+                                <a href="#contact" class="btn btn-primary compact-btn card-cta-btn"
+                                    data-service="estetica">Agendar Valoración</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card-container">
+                    <div class="service-stagger-card card-stagger-4" data-category="longevidad">
+                        <!-- Front Face -->
+                        <div class="card-face card-front" style="
+                      background-image:
+                        linear-gradient(
+                          to bottom,
+                          rgba(18, 21, 20, 0.1) 0%,
+                          rgba(18, 21, 20, 0.85) 100%
+                        ),
+                        url(&quot;assets/service_longevity_active.png&quot;);
+                    ">
+                            <div class="card-content-wrapper">
+                                <h3>Longevidad Activa</h3>
+                                <p>
+                                    Programas preventivos personalizados que reactivan los
+                                    marcadores de vitalidad celular y frenan el reloj biológico
+                                    orgánico.
+                                </p>
+                                <div class="card-action-trigger">Ver Detalles <span class="arrow">➔</span></div>
+                            </div>
+                        </div>
+                        <!-- Back Face -->
+                        <div class="card-face card-back">
+                            <div class="card-back-content">
+                                <button class="close-card-btn" aria-label="Cerrar">&times;</button>
+                                <span class="card-back-tag">Optimización Metabólica</span>
+                                <h3>Longevidad Activa</h3>
+                                <span class="service-subtitle">Prevención y Vitalidad Mitocondrial</span>
+                                <div class="details-divider"></div>
+                                <ul class="details-benefits">
+                                    <li><span class="gold-check">✓</span> Suplementación celular NMN + NAD+</li>
+                                    <li><span class="gold-check">✓</span> Reactivación de vitalidad física</li>
+                                    <li><span class="gold-check">✓</span> Protección celular ante estrés oxidativo</li>
+                                </ul>
+                                <div class="details-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Enfoque</span>
+                                        <span class="meta-value">Salud y Energía Celular</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Protocolo</span>
+                                        <span class="meta-value">100% Personalizado</span>
+                                    </div>
+                                </div>
+                                <a href="#contact" class="btn btn-primary compact-btn card-cta-btn"
+                                    data-service="general">Agendar Valoración</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carlos Miramontes Section (Dark Sophisticated) -->
+    <section id="carlos" class="carlos-section">
+        <div class="container">
+            <div class="carlos-grid">
+                <!-- Columna 1: Foto del Doctor -->
+                <div class="carlos-image">
+                    <div class="image-wrapper">
+                        <img src="assets/DrCarlos.png" alt="Dr. Carlos Miramontes - Fundador Científico" />
+                    </div>
+                    <div class="carlos-badge">Liderazgo Médico</div>
+                </div>
+
+                <!-- Columna 2: Contenedor de Información y Co-branding -->
+                <div class="carlos-content-wrapper">
+                    <!-- Información del Doctor -->
+                    <div class="carlos-text">
+                        <span class="section-tag" style="
+                    background-color: rgba(197, 168, 92, 0.1);
+                    color: var(--accent);
+                  ">Dirección y Ética</span>
+                        <h2>Dr. Carlos Miramontes</h2>
+                        <p class="carlos-title">
+                            CEO de ME HEALTH & Especialista en Medicina Regenerativa
+                        </p>
+                        <p>
+                            El Dr. Carlos Miramontes es médico especializado en medicina regenerativa y terapias
+                            celulares,
+                            con una destacada trayectoria en la investigación, desarrollo y aplicación de tratamientos
+                            innovadores enfocados en mejorar la calidad de vida de los pacientes.
+                        </p>
+                        <p>
+                            Actualmente se desempeña como CEO de ME HEALTH, corporativo especializado en medicina
+                            regenerativa que provee soluciones médicas a StemCells, contribuyendo al fortalecimiento de
+                            tratamientos avanzados, seguros y profesionales dentro del sector salud.
+                        </p>
+                        <p>
+                            A lo largo de su carrera, el Dr. Miramontes ha recibido diferentes premios y reconocimientos
+                            por
+                            su aportación a la medicina regenerativa, su compromiso con la innovación médica y su labor
+                            en
+                            la búsqueda de alternativas terapéuticas para pacientes con diversas condiciones de salud.
+                        </p>
+                        <p>
+                            Su enfoque combina experiencia clínica, visión científica y un profundo sentido humano,
+                            ofreciendo atención responsable, ética y personalizada. A través de la colaboración entre ME
+                            HEALTH y StemCells, trabajamos en conjunto para acercar soluciones de medicina regenerativa
+                            que
+                            contribuyan al bienestar integral de los pacientes y a mejorar su calidad de vida.
+                        </p>
+
+                        <div class="accreditation-box">
+                            <div class="accreditation-item">
+                                <div class="accreditation-icon">✓</div>
+                                <span>Alianza Exclusiva con ME HEALTH</span>
+                            </div>
+                            <div class="accreditation-item">
+                                <div class="accreditation-icon">✓</div>
+                                <span>Línea celular de grado clínico alta viabilidad</span>
+                            </div>
+                            <div class="accreditation-item">
+                                <div class="accreditation-icon">✓</div>
+                                <span>Aprobación y cumplimiento ético normativo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logos y Co-Branding -->
+                    <div class="carlos-logos-column">
+                        <div class="logos-card">
+                            <span class="card-subtitle">Alianza Estratégica</span>
+                            <div class="logo-item stemcells-logo-box">
+                                <img src="assets/logo_steamCells.png" alt="Logo STEMCELLS" />
+                                <span class="logo-name">STEMCELLS</span>
+                            </div>
+                            <div class="logos-cross-connector">✚</div>
+                            <div class="logo-item mehealth-logo-box">
+                                <img src="assets/m_health.jpg" alt="Logo ME HEALTH" class="mehealth-logo-img" />
+                                <span class="logo-name">ME HEALTH</span>
+                            </div>
+                            <p class="logos-card-desc">Respaldo científico y clínico conjunto para terapias celulares de
+                                alta viabilidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section (Showcase Catalog) -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="products-grid" style="margin-bottom: 90px">
+                <div class="products-text">
+                    <span class="section-tag">Alta Cosmética Celular</span>
+                    <h3>Elixir Regenerador del Envejecimiento Dérmico</h3>
+                    <p>
+                        Lleve los descubrimientos de la medicina regenerativa a su rutina
+                        diaria de cuidado personal. Nuestra línea cosmética premium está
+                        formulada con factores de crecimiento secretados por células madre
+                        y péptidos biológicos que penetran las capas más profundas de la
+                        epidermis.
+                    </p>
+
+                    <div class="product-features-grid">
+                        <div class="product-feature-item">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Factores de Crecimiento Naturales</h4>
+                                <p>
+                                    Activan la renovación celular cutánea profunda y estimulan
+                                    los fibroblastos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-feature-item">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Efecto Tensor y Luminosidad</h4>
+                                <p>
+                                    Mejora la elasticidad reduciendo visiblemente el relieve de
+                                    líneas de expresión.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-feature-item">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Protección contra Estrés Oxidativo</h4>
+                                <p>
+                                    Crea un escudo contra la radiación ultravioleta y
+                                    contaminantes del ambiente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">Adquirir en Clínica</a>
+                </div>
+                <div class="products-image">
+                    <img src="assets/product_cosmetics.png" alt="Línea Cosmética Regeneradora Stemcells" />
+                </div>
+            </div>
+
+            <!-- Vitrina / Catálogo de Productos Completo -->
+            <div class="products-catalog-divider"></div>
+
+            <div class="products-catalog-header">
+                <span class="section-tag" style="
+              background-color: rgba(197, 168, 92, 0.1);
+              color: var(--accent);
+            ">Portafolio Científico</span>
+                <h3>Fórmulas de Precisión Biológica</h3>
+                <p class="services-premium-desc" style="max-width: 700px; margin: 0 auto">
+                    Nuestra gama completa de biotecnología médica. Filtre por categoría o realice una búsqueda en tiempo
+                    real.
+                </p>
+            </div>
+
+            <!-- Controles de Filtro y Búsqueda Premium -->
+            <div class="products-controls">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="product-search" placeholder="Buscar por producto, beneficio o ingrediente..."
+                        aria-label="Buscar productos" />
+                    <button id="search-clear-btn" aria-label="Limpiar búsqueda" style="display: none;">&times;</button>
+                </div>
+                <div class="filter-tabs-wrapper">
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="cosmeticos">Cosméticos</button>
+                        <button class="filter-btn" data-filter="suplementos">Suplementos</button>
+                        <button class="filter-btn" data-filter="regenerativa">Medicina Regenerativa</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-catalog-grid" id="catalog-grid">
+                <!-- ==================== COSMÉTICOS ==================== -->
+                <div class="product-catalog-card product-card-gsap" data-category="cosmeticos">
+                    <div class="product-card-badge">COSMÉTICA CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/cosmeticos/CREMA CON VITAMINA C S COSMETICS.png"
+                            alt="Crema Facial con Vitamina C" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Crema con Vitamina C</h4>
+                        <p>Potente crema antioxidante que unifica el tono, aporta luminosidad y estimula la síntesis de
+                            colágeno natural.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Alta Cosmética</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Crema con Vitamina C">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="cosmeticos">
+                    <div class="product-card-badge">COSMÉTICA CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/cosmeticos/FACTOR VITAL S COSMETICS.png"
+                            alt="Factor Vital S Cosmetics" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Factor Vital</h4>
+                        <p>Emulsión regeneradora premium con factores de crecimiento celular para una profunda
+                            revitalización dérmica.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Alta Cosmética</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Factor Vital">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="cosmeticos">
+                    <div class="product-card-badge">COSMÉTICA CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/cosmeticos/GEL CAPILAR S COSMETICS.png" alt="Gel Capilar S Cosmetics"
+                            class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Gel Capilar</h4>
+                        <p>Tratamiento capilar avanzado que nutre y fortalece el folículo, estimulando la regeneración
+                            del cabello.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Alta Cosmética</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Gel Capilar">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="cosmeticos">
+                    <div class="product-card-badge">COSMÉTICA CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/cosmeticos/GEL CONTORNO DE OJOS S COSMETICS.png"
+                            alt="Gel Contorno de Ojos S Cosmetics" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Gel Contorno de Ojos</h4>
+                        <p>Fórmula tensora y descongestiva diseñada para atenuar bolsas, ojeras y finas líneas de
+                            expresión perioculares.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Alta Cosmética</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Gel Contorno de Ojos">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="cosmeticos">
+                    <div class="product-card-badge">COSMÉTICA CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/cosmeticos/SHAMPOO S COSMETICS.png" alt="Shampoo S Cosmetics"
+                            class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Shampoo Regenerador</h4>
+                        <p>Fórmula de limpieza enriquecida con nutrientes biológicos para aportar densidad, grosor y
+                            vitalidad al cabello.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Alta Cosmética</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Shampoo Regenerador">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="cosmeticos">
+                    <div class="product-card-badge">COSMÉTICA CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/cosmeticos/SUERO FACIL S COSMETICS.png"
+                            alt="Suero Facial S Cosmetics" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Suero Facial</h4>
+                        <p>Suero concentrado que penetra a nivel molecular para tensar, hidratar y restaurar la
+                            elasticidad dérmica.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Alta Cosmética</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Suero Facial">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="cosmeticos">
+                    <div class="product-card-badge">COSMÉTICA CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/cosmeticos/SUERO ILUMINADOR S COSMETICS.png"
+                            alt="Suero Iluminador S Cosmetics" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Suero Iluminador</h4>
+                        <p>Fórmula antiedad que proporciona luminosidad radiante y combate los signos de fatiga y estrés
+                            oxidativo.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Alta Cosmética</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Suero Iluminador">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="cosmeticos">
+                    <div class="product-card-badge">COSMÉTICA CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/cosmeticos/SUERO PARA PESTAÑAS S COSMETICS.png"
+                            alt="Suero para Pestañas S Cosmetics" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Suero para Pestañas</h4>
+                        <p>Tratamiento fortalecedor folicular que fomenta el crecimiento natural, grosor y abundancia de
+                            pestañas y cejas.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Alta Cosmética</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Suero para Pestañas">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="cosmeticos">
+                    <div class="product-card-badge">COSMÉTICA CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/CELULAR SKIN.png" alt="Celular Skin" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Celular Skin</h4>
+                        <p>Suero biológico avanzado para reactivar el rejuvenecimiento dérmico y atenuar arrugas
+                            profundas.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Alta Cosmética</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Celular Skin">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SUPLEMENTOS ==================== -->
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">SOPORTE ARTICULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/ARFLEXO IA.png" alt="Arflexo IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Arflexo IA</h4>
+                        <p>Suplemento bio-activo premium para lubricar y regenerar cartílagos, mejorando la movilidad y
+                            reduciendo inflamación.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Arflexo IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">ANTIOXIDANTE CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/B17 IA.png" alt="B17 IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>B17 IA (Amigdalina)</h4>
+                        <p>Soporte celular avanzado a base de amigdalina purificada, un potente antioxidante metabólico
+                            para el bienestar sistémico.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="B17 IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">SALUD CIRCULATORIA</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/CASTAÑA DE INDIAS IA.png" alt="Castaña de Indias IA"
+                            class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Castaña de Indias IA</h4>
+                        <p>Extracto natural estandarizado de máxima pureza para fortalecer vasos sanguíneos y optimizar
+                            el retorno venoso.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Castaña de Indias IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">REGENERADOR DE TEJIDOS</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/DMSO.png" alt="DMSO" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>DMSO (Dimetilsulfóxido)</h4>
+                        <p>Fórmula concentrada orgánica para acelerar la curación de tejidos blandos, calmar dolor e
+                            incrementar absorción nutricional.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="DMSO">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">ELIXIR DE JUVENTUD</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/ELIXIR IA.png" alt="Elixir IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Elixir IA</h4>
+                        <p>Sinergia antiedad and antioxidante diseñada para ralentizar los daños causados por radicales
+                            libres a nivel genómico.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Elixir IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">SOPORTE METABÓLICO</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/FACTOR CELULAR.png" alt="Factor Celular" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Factor Celular</h4>
+                        <p>Soporte avanzado e inmunoregulador biológico para estimular la respuesta autoregeneradora
+                            molecular de órganos vitales.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Factor Celular">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">BIORREGULADOR INMUNE</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/FACTOR COCODRILO.png" alt="Factor Cocodrilo"
+                            class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Factor Cocodrilo</h4>
+                        <p>Compuesto bio-inmunológico altamente protector para optimizar las defensas y acelerar
+                            procesos de cicatrización.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Factor Cocodrilo">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">VASODILATADOR NATURAL</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/L-ARGININA IA.png" alt="L-Arginina IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>L-Arginina IA</h4>
+                        <p>Aminoácido precursor del óxido nítrico que dilata vasos sanguíneos, mejorando oxigenación
+                            celular y rendimiento físico.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="L-Arginina IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">NUTRICIÓN DIARIA</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/MULTI VITAMINICO IA.png" alt="Multi Vitamínico IA"
+                            class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Multi Vitamínico IA</h4>
+                        <p>Complejo premium de vitaminas, minerales esenciales y cofactores quelados para una absorción
+                            y energía celular óptimas.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Multi Vitamínico IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">LONGEVIDAD EXTREMA</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/NAD + IA.png" alt="NAD+ IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>NAD+ Resveratrol</h4>
+                        <p>Activador del rejuvenecimiento mitocondrial que potencia el NAD+, enciende sirtuinas y apoya
+                            la reparación del ADN.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="NAD+ Resveratrol">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">FORTALECIMIENTO CAPILAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/Nutricapillum.png" alt="Nutricapillum" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Nutricapillum</h4>
+                        <p>Fórmula oral nutracéutica con biotina y oligoelementos que detiene la caída y fortalece el
+                            folículo capilar.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Nutricapillum">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">PROTECCIÓN CARDIOVASCULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/OMEGA 3 CHIA IA.png" alt="Omega 3 Chía IA"
+                            class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Omega 3 de Chía IA</h4>
+                        <p>Ácidos grasos esenciales de origen vegetal para apoyar la salud cerebral, reducir
+                            triglicéridos y mitigar inflamación.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Omega 3 de Chía IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">BENEFACTOR CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/ONCO MAX IA.png" alt="Onco Max IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Onco Max IA</h4>
+                        <p>Complejo inmunonutricional de alta gama diseñado para apoyar la respuesta celular frente a
+                            agresores extremos.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="ONCO MAX IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">VITALIDAD AUMENTADA</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/REJUVE MAX IA.png" alt="Rejuve Max IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Rejuve Max IA</h4>
+                        <p>Potenciador mitocondrial que combate los marcadores biológicos del cansancio crónico y
+                            envejecimiento.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Rejuve Max IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">RENOVACIÓN CORPORAL</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/REJUVECELL IA.png" alt="Rejuvecell IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Rejuvecell IA</h4>
+                        <p>Nutracéutico premium que promueve el reciclaje celular (autofagia) y protege los órganos del
+                            estrés oxidativo.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Rejuvecell IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">CALMA & ENFOQUE</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/RELAX PLUS IA.png" alt="Relax Plus IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Relax Plus IA</h4>
+                        <p>Regulador natural de la ansiedad y el cortisol, promoviendo el equilibrio emocional y enfoque
+                            mental sin somnolencia.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Relax Plus IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">OPTIMIZACIÓN LIPÍDICA</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/SIN GRASS IA.png" alt="Sin Grass IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Sin Grass IA</h4>
+                        <p>Acelerador metabólico formulado para potenciar la conversión de grasas en energía y regular
+                            los antojos.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Sin Grass IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">DESCANSO NOCTURNO</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/SOMNOLET IA.png" alt="Somnolet IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Somnolet IA</h4>
+                        <p>Complejo inductor del sueño y sincronizador circadiano para un descanso biológicamente
+                            profundo y reparador.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Somnolet IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="suplementos">
+                    <div class="product-card-badge">ESCUDO INMUNOLÓGICO</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/VITAMINA C IA.png" alt="Vitamina C IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Vitamina C IA</h4>
+                        <p>Ácido ascórbico ultra-puro con bioflavonoides para una máxima biodisponibilidad, defensa y
+                            producción de colágeno.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Suplemento Elite</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Vitamina C IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== MEDICINA REGENERATIVA ==================== -->
+                <div class="product-catalog-card product-card-gsap" data-category="regenerativa">
+                    <div class="product-card-badge">TERAPIA CELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/CELULAS.png" alt="Células" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Células Madre Mesenquimales</h4>
+                        <p>Tratamiento regenerador con células viables de cordón umbilical post-parto, diseñadas para
+                            regeneración sistémica e inflamación.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Clínico Certificado</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Células Madre Mesenquimales">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="regenerativa">
+                    <div class="product-card-badge">TERAPIA ACELULAR</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/EXOSOMAS.png" alt="Exosomas" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Terapia de Exosomas</h4>
+                        <p>Factores de crecimiento y ARN en nanopartículas que aceleran de forma exponencial la
+                            comunicación y reparación de tejidos.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Clínico Certificado</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Terapia de Exosomas">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="regenerativa">
+                    <div class="product-card-badge">REVITALIZACIÓN HORMONAL</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/IMPLANTE 1GR.png" alt="Implante 1gr" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Implante de Placenta 1g</h4>
+                        <p>Protocolo regenerativo de liofilizado placentario humano para restaurar el equilibrio
+                            endocrino y la vitalidad celular.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Clínico Certificado</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Implante de Placenta 1g">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="regenerativa">
+                    <div class="product-card-badge">REGENERACIÓN EXTREMA</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/IMPLANTE 2GR.png" alt="Implante 2gr" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Implante de Placenta 2g</h4>
+                        <p>Implante de alta densidad de factores de crecimiento celulares indicados para fatiga crónica
+                            intensa y antienvejecimiento.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Clínico Certificado</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Implante de Placenta 2g">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="regenerativa">
+                    <div class="product-card-badge">TERAPIA CELULAR JOVEN</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/IMPLANTE DE CORDON.png" alt="Implante de Cordón"
+                            class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Implante de Cordón Umbilical</h4>
+                        <p>Biotecnología celular activa obtenida de tejido de cordón para promover la estimulación
+                            regeneradora tisular profunda.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Clínico Certificado</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Implante de Cordón Umbilical">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="regenerativa">
+                    <div class="product-card-badge">INFUSIÓN MITOCONDRIAL</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/NAD IV IA.png" alt="NAD IV IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Terapia NAD+ Intravenosa</h4>
+                        <p>Infusión directa endovenosa para recargar de forma inmediata la mitocondria, activar
+                            sirtuinas y limpiar radicales.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Clínico Certificado</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Terapia NAD+ Intravenosa">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="regenerativa">
+                    <div class="product-card-badge">INMUNOTERAPIA ACTIVA</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/NK.png" alt="NK" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Células Natural Killer (NK)</h4>
+                        <p>Protocolo avanzado de inmunología clínica preventiva para potenciar la respuesta inmunitaria
+                            del cuerpo.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Clínico Certificado</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Células Natural Killer (NK)">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="regenerativa">
+                    <div class="product-card-badge">DETOX ANTISÉPTICO</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/QUELACION IA.png" alt="Quelación IA" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Quelación Arterial IA</h4>
+                        <p>Terapia endovenosa de desintoxicación vascular para remover metales pesados, placas de calcio
+                            y optimizar elasticidad.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Clínico Certificado</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Quelación Arterial IA">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-catalog-card product-card-gsap" data-category="regenerativa">
+                    <div class="product-card-badge">FACTORES SOLUBLES</div>
+                    <div class="product-card-visual">
+                        <img src="assets/productos/SECRETOMA.png" alt="Secretoma" class="product-card-img" />
+                        <div class="product-card-glow-element"></div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Secretoma Regenerativo</h4>
+                        <p>Concentrado rico en citocinas, factores reguladores y citoquinas purificadas para inducción
+                            reparadora celular celular.</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-status">Clínico Certificado</span>
+                            <a href="#contact" class="btn btn-outline product-card-btn"
+                                data-product="Secretoma Regenerativo">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles de Paginación Premium -->
+            <div class="products-pagination">
+                <button id="prev-page-btn" class="btn btn-outline pagination-btn" disabled>
+                    <span class="pagination-arrow">&larr;</span> Anterior
+                </button>
+                <div class="pagination-info-wrapper">
+                    <span class="pagination-indicator" id="page-indicator">Página 1 de 4</span>
+                </div>
+                <button id="next-page-btn" class="btn btn-outline pagination-btn">
+                    Siguiente <span class="pagination-arrow">&rarr;</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Resolviendo Dudas</span>
+                <h2>Preguntas Frecuentes</h2>
+                <p>
+                    Información científica clara y honesta para su total tranquilidad.
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-list">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <button class="faq-header">
+                            <h3>¿De dónde se obtienen las células madre utilizadas?</h3>
+                            <div class="faq-icon"></div>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                <p>
+                                    Nuestras células madre mesenquimales se obtienen de tejidos
+                                    humanos donados de fuentes altamente seguras y éticas,
+                                    específicamente de cordón umbilical post-parto a término.
+                                    Los laboratorios de ME HEALTH realizan rigurosos análisis
+                                    genéticos e infecciosos para asegurar que las células estén
+                                    completamente libres de patógenos y tengan la máxima
+                                    capacidad proliferativa y regeneradora.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <button class="faq-header">
+                            <h3>¿Los tratamientos son seguros y están autorizados?</h3>
+                            <div class="faq-icon"></div>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                <p>
+                                    Sí, absolutamente. Todos nuestros protocolos clínicos se
+                                    realizan con productos biológicos fabricados en laboratorios
+                                    con licencias y certificaciones de las autoridades
+                                    sanitarias competentes (COFEPRIS en México y bajo
+                                    lineamientos internacionales compatibles con la FDA). Cada
+                                    lote clínico cuenta con un certificado de pureza,
+                                    esterilidad y viabilidad celular que se le entrega al
+                                    paciente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <button class="faq-header">
+                            <h3>¿Qué diferencia hay entre células madre y exosomas?</h3>
+                            <div class="faq-icon"></div>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                <p>
+                                    Las células madre son células vivas completas con capacidad
+                                    de autorreplicarse y diferenciarse en múltiples tejidos. Los
+                                    exosomas, por otro lado, son nano-vesículas acelulares (no
+                                    son células vivas) ricas en ARN y factores de crecimiento
+                                    extraídos de las células madre. Los exosomas sirven como un
+                                    potentísimo mensajero celular para estimular la
+                                    autorreparación del tejido sin necesidad de integrar células
+                                    nuevas, ideal para tratamientos estéticos avanzados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <button class="faq-header">
+                            <h3>¿Cuánto tiempo tarda en verse el resultado terapéutico?</h3>
+                            <div class="faq-icon"></div>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                <p>
+                                    Los resultados varían según la terapia. Para tratamientos
+                                    estéticos con exosomas, la luminosidad y elasticidad dérmica
+                                    son visibles en pocos días. En terapias regenerativas
+                                    sistémicas para inflamación crónica u órganos, la mejora es
+                                    progresiva; el paciente comienza a percibir un aumento de
+                                    energía, vitalidad y reducción de dolores entre la tercera y
+                                    octava semana del tratamiento, a medida que avanza el ciclo
+                                    de renovación biológica interna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-bg-container">
+            <div class="contact-bg-image" style="background-image: url('assets/hero_bg.png')"></div>
+            <video class="contact-bg-video" autoplay muted playsinline loop referrerpolicy="no-referrer"
+                style="z-index: 2;">
+                <source src="https://cryovidastemcells.com/wp-content/uploads/2025/12/Fondo-cryovida-hero.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="bg-blob blob-1"></div>
+            <div class="bg-blob blob-2"></div>
+            <div class="bg-blob blob-3"></div>
+            <canvas id="contact-canvas"></canvas>
+            <div class="contact-overlay"></div>
+        </div>
+        <div class="container" style="position: relative; z-index: 10;">
+            <div class="section-header-premium contact-header-gsap" style="margin-bottom: 50px">
+                <span class="section-tag">Contacto & Ubicación</span>
+                <h2>Comience su Camino hacia la Regeneración Celular</h2>
+                <p class="services-premium-desc" style="max-width: 750px; margin: 0 auto">
+                    Agende una sesión de valoración personalizada y visite nuestras
+                    exclusivas instalaciones en una de las zonas de mayor prestigio del
+                    país.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Columna Izquierda: Formulario Premium -->
+                <div class="contact-form-container contact-form-gsap">
+                    <h3>Solicitar más información</h3>
+                    <form action="#" method="POST" id="booking-form">
+                        <div class="form-group">
+                            <label for="form-name" class="form-label">Nombre Completo</label>
+                            <input type="text" id="form-name" class="form-input" placeholder="Ej. Dr. Bryan Lepe"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email" class="form-label">Correo Electrónico</label>
+                            <input type="email" id="form-email" class="form-input" placeholder="nombre@correo.com"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <label for="form-treatment" class="form-label">Tratamiento de Interés</label>
+                            <select id="form-treatment" class="form-input" required style="appearance: none">
+                                <option value="celulas">Células Madre Mesenquimales</option>
+                                <option value="exosomas">Terapia de Exosomas</option>
+                                <option value="estetica">
+                                    Medicina Estética Regenerativa
+                                </option>
+                                <option value="general">
+                                    Consulta de Valoración General
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message" class="form-label">Mensaje</label>
+                            <textarea id="form-message" class="form-input"
+                                placeholder="Escriba brevemente su objetivo de salud..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btn-submit">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+
+                    <!-- Detalles de contacto compactos e interactivos -->
+                    <div class="contact-compact-details">
+                        <a href="mailto:info@stemcells.com" class="compact-card-link">
+                            <span class="compact-card-icon">📧</span>
+                            <div class="compact-card-text">
+                                <h4>Email</h4>
+                                <p>info@stemcells.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+525512345678" class="compact-card-link">
+                            <span class="compact-card-icon">📞</span>
+                            <div class="compact-card-text">
+                                <h4>Teléfono / WA</h4>
+                                <p>+52 (55) 1234-5678</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Mapa de Ubicación con Controles y Overlay Glassmorphic -->
+                <div class="contact-map-container contact-map-gsap">
+                    <div class="contact-map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.701709448973!2d-103.4046166!3d20.6410119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ad218a48b071%3A0x50fe6b4262dd6b43!2sStemcells!5e0!3m2!1ses-419!2smx!4v1779857339595!5m2!1ses-419!2smx"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="map-info-overlay">
+                            <div class="overlay-badge">Corporativo medicina regenerativa</div>
+                            <h4 class="overlay-title">Stemcells</h4>
+                            <p class="overlay-address">
+                                📍Salmón 3104, Loma Bonita, 45088 Guadalajara, Jal.
+                            </p>
+                            <p class="overlay-hours">
+                                🕒 Lun - Vie: 9:00 AM - 5:00 PM | Sáb: 9:00 AM - 1:00 PM
+                            </p>
+                            <div class="overlay-actions">
+                                <a href="https://www.google.com/maps/place/Stemcells/@20.6410119,-103.4046166,17z/data=!3m1!4b1!4m6!3m5!1s0x8428ad218a48b071:0x50fe6b4262dd6b43!8m2!3d20.6410119!4d-103.4046166!16s%2Fg%2F11w7mkkl64?hl=es-419&entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank" rel="noopener" class="btn btn-secondary compact-btn">
+                                    <span>Google Maps</span>
+                                </a>
+                                <a href="https://www.waze.com/live-map?locale=es-419&utm_campaign=share_drive&utm_source=waze_app"
+                                    target="_blank" rel="noopener" class="btn btn-secondary compact-btn">
+                                    <span>Abrir en Waze</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            style="fill: none; stroke: var(--primary)">
+                            <circle cx="12" cy="12" r="10" stroke-width="1.5" />
+                            <path d="M12 6a6 6 0 0 1 6 6M12 8a4 4 0 0 1 4 4M12 10a2 2 0 0 1 2 2" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span class="logo-text">STEMCELLS</span>
+                    </div>
+                    <p>
+                        Liderando el acceso a tratamientos biológicos avanzados de
+                        medicina regenerativa, longevidad y cosmética celular.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <a href="#hero">Inicio</a>
+                    <a href="#about">Nosotros</a>
+                    <a href="#services">Servicios</a>
+                    <a href="#carlos">Dr. Miramontes</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <a href="#contact">Más información</a>
+                    <a href="mailto:info@stemcells.com">info@stemcells.com</a>
+                    <a href="tel:+525512345678">CDMX: +52 55 1234-5678</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 STEMCELLS. Todos los derechos reservados. Tratamientos
+                    médicos autorizados y en asociación científica exclusiva con ME
+                    HEALTH.
+                </p>
+                <div class="footer-legal-links">
+                    <a href="#">Aviso de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp Premium -->
+    <a href="https://wa.me/525512345678?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20terapias%20de%20STEMCELLS."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <div class="whatsapp-tooltip">Chat en Vivo 💬</div>
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.74.002-2.602-1.01-5.05-2.85-6.89C16.646 2.135 14.2 1.13 11.603 1.13 6.166 1.13 1.74 5.501 1.737 10.87c-.001 1.687.452 3.326 1.312 4.737L2.04 20.35l4.81-1.256zM17.65 14.6c-.31-.15-1.84-.9-2.13-1-.28-.1-.49-.15-.69.15-.2.3-.77.9-.94 1.1-.17.2-.34.22-.65.07-1.15-.5-2.02-1-2.82-1.74-.63-.54-1.05-1.2-1.18-1.42-.13-.22-.01-.35.1-.46.1-.1.22-.26.33-.38.11-.13.15-.22.22-.37.07-.15.03-.28-.02-.38-.05-.1-.49-1.18-.67-1.62-.18-.43-.37-.37-.5-.38-.13 0-.28-.02-.43-.02-.15 0-.39.06-.6.28-.2.22-.78.76-.78 1.85 0 1.09.8 2.14.9 2.3.1.15 1.57 2.4 3.8 3.36.53.23 1.01.37 1.36.48.54.17 1.03.15 1.42.09.43-.06 1.33-.54 1.51-1.06.18-.53.18-.98.13-1.07-.05-.08-.2-.13-.51-.28z"
+                fill="currentColor" />
+        </svg>
+    </a>
+
+    <!-- Swiper JS (Hero Carousel) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

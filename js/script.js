@@ -3,66 +3,11 @@
 // Registrar GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-// 1. Lógica del Preloader y Timeline del Hero
-const preloader = document.getElementById("preloader");
-const preloaderBar = document.getElementById("preloader-bar");
-const preloaderPercentage = document.getElementById("preloader-percentage");
-const preloaderLogo = document.getElementById("preloader-logo");
-
-let progress = 0;
-const intervalTime = 25; // 25ms * 100 = 2.5 segundos aprox de preloader
-const progressInterval = setInterval(() => {
-  progress += 1;
-  if (progressBarAndPercentage(progress)) {
-    clearInterval(progressInterval);
-    endPreloader();
-  }
-}, intervalTime);
-
-function progressBarAndPercentage(val) {
-  if (preloaderBar) preloaderBar.style.width = `${val}%`;
-  if (preloaderPercentage) preloaderPercentage.textContent = `${val}%`;
-  return val >= 100;
-}
-
-function endPreloader() {
-  const tl = gsap.timeline({
-    onComplete: () => {
-      if (preloader) preloader.style.display = "none";
-    },
-  });
-
-  // Animar elementos del Preloader para salir
-  tl.to(preloaderLogo, {
-    opacity: 0,
-    scale: 1.1,
-    y: -10,
-    duration: 0.6,
-    ease: "power3.inOut",
-  })
-    .to(
-      preloaderPercentage,
-      {
-        opacity: 0,
-        duration: 0.4,
-      },
-      "-=0.4",
-    )
-    .to(
-      preloader,
-      {
-        yPercent: -100,
-        duration: 1.2,
-        ease: "power4.inOut",
-      },
-      "-=0.2",
-    )
-
-    // Iniciar Timeline de Entrada del Hero
-    .call(() => {
-      startHeroEntrance();
-    });
-}
+// 1. Lógica de Entrada del Hero (Sin Preloader)
+document.addEventListener("DOMContentLoaded", () => {
+  // Iniciar Timeline de Entrada del Hero inmediatamente
+  startHeroEntrance();
+});
 
 function startHeroEntrance() {
   const heroTl = gsap.timeline();
